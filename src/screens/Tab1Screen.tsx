@@ -3,6 +3,7 @@ import {View, Text} from 'react-native';
 import {styles} from '../theme/appTheme';
 import Icon from 'react-native-vector-icons/Ionicons';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
+import {TouchableIcon} from '../components/TouchableIcon';
 
 export const Tab1Screen = () => {
   const {top} = useSafeAreaInsets();
@@ -14,16 +15,16 @@ export const Tab1Screen = () => {
     <View style={{...styles.globalMargin, marginTop: top}}>
       <Text style={styles.title}>Iconos</Text>
       <Text>
-        <Icon name="airplane-outline" size={80} color="purple" />
-        <Icon name="aperture-outline" size={80} color="purple" />
-        <Icon name="american-football-outline" size={80} color="purple" />
-        <Icon name="bus-outline" size={80} color="purple" />
-        <Icon name="bar-chart-outline" size={80} color="purple" />
-        <Icon name="baseball-outline" size={80} color="purple" />
-        <Icon name="bicycle-outline" size={80} color="purple" />
-        <Icon name="desktop-outline" size={80} color="purple" />
-        <Icon name="earth-outline" size={80} color="purple" />
-        <Icon name="qr-code-outline" size={80} color="purple" />
+        <TouchableIcon iconName="airplane-outline" />
+        <TouchableIcon iconName="aperture-outline" />
+        <TouchableIcon iconName="american-football-outline" />
+        <TouchableIcon iconName="bus-outline" />
+        <TouchableIcon iconName="bar-chart-outline" />
+        <TouchableIcon iconName="baseball-outline" />
+        <TouchableIcon iconName="bicycle-outline" />
+        <TouchableIcon iconName="desktop-outline" />
+        <TouchableIcon iconName="earth-outline" />
+        <TouchableIcon iconName="qr-code-outline" />
       </Text>
     </View>
   );
